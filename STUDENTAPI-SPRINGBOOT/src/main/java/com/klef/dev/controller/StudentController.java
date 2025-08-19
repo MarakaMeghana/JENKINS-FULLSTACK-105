@@ -24,6 +24,10 @@ public class StudentController {
     {
         return "Jenkins Full Stack Deployment Demo";
     }
+    @GetMapping("")
+    public String defaultHome() {
+        return "Spring Boot Student API Root - Use /studentapi/* endpoints";
+    }
     
 
     @PostMapping("/add")
